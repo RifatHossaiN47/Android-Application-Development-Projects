@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C2833"
+    tools:context=".result">
+
+    <ImageView
+        android:layout_width="224dp"
+        android:layout_height="175dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ok"
+        android:id="@+id/img"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="237dp"
+        android:layout_below="@id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ll"
+        android:background="#2E3133"
+        >
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="341dp"
+            android:layout_height="91dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="33"
+            android:textStyle="bold"
+            android:textSize="70sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="223dp"
+            android:layout_height="39dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:text="gender"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lr"
+            android:layout_width="345dp"
+            android:layout_height="67dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="170dp"
+            android:text="Result"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn"
+        android:layout_width="389dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button"
+        android:text="Recalculate your BMI"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</RelativeLayout>
