@@ -1,4 +1,4 @@
-#BMI Calculator APP
+# BMI Calculator APP
 * I am providing some screenshots here to give you some view of the project.
 
 Thank you!!
