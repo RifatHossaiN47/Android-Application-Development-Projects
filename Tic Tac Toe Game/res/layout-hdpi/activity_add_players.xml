@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1327A6"
+    tools:context=".AddPlayers">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="264dp"
+        android:layout_height="49dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Enter Players Name:"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <ImageView
+        android:layout_width="51dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/fp"
+        app:layout_constraintEnd_toStartOf="@+id/fp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fp"
+        android:layout_width="288dp"
+        android:layout_height="62dp"
+        android:hint="First Player Name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/sp"
+        app:layout_constraintEnd_toEndOf="@+id/sp"
+        app:layout_constraintStart_toStartOf="@+id/sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="51dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:src="@drawable/dfd"
+        app:layout_constraintBottom_toBottomOf="@+id/sp"
+        app:layout_constraintEnd_toStartOf="@+id/sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/sp"
+        android:layout_width="288dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="60dp"
+        android:hint="Second Player Name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/bb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fp" />
+
+    <Button
+        android:id="@+id/bb"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FA0365"
+        android:text="START GAME"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="492dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="493dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
